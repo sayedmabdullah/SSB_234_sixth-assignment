@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600,700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2f85;
+    text-transform: uppercase;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #b0b0b1;
+}
+
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+}
+nav ul {
+    margin-left: 25px;
+}
+
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.banner {
+    background-image: url(../images/banner.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content {
+    width: 40%;
+}
+.content h1 {
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+.icon {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -25%);
+    animation: icon-ani 1s linear infinite ;
+    animation-direction: alternate;
+
+}
+
+.icon i {
+    color: white;
+    font-size: 30px;
+}
+
+@keyframes icon-ani {
+    0% {
+        transform: translate(-50%, 0%);
+    }
+    100% {
+        transform: translate(-50%, -80%);
+    }
+}
+
+.who-we-are {
+    overflow: hidden;
+}
+
+.who-we-are-content {
+    width: 50%;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+}
+
+.who-we-are-content h1::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 6px;
+    top: 0;
+    background-color: tomato;
+}
+.who-we-are-content h1 {
+    margin:20px 0;
+}
+
+.who-we-are-content p {
+    margin-bottom: 20px;
+    line-height: 2;
+    width: 80%;
+    text-align: justify;
+}
+
+.who-we-are-img{
+    margin-top: 75px;
+    width: 50%;
+    float: right;
+}
